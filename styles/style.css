@@ -2,4 +2,195 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  max-width: 1024px;
+  min-width: 355px;
+  margin: 20px;
+  font-family: var(--accent-font), 'Raleway', sans-serif;
+  background-color: var(--bg-color);
+  background-image: url(../images/cover-image-light.png);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  
+}
+
+.header__theme-menu-list {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header__theme-menu::before {
+  width: 25px;
+  height: 25px;
+  border-top: 1px solid var(--text-color);
+  margin-bottom: 25px;
+}
+
+.header__theme-menu-button {
+  width: 70px;
+  font-size: 18px;
+  border: 1px solid rgba(50, 49, 45, 0.00);
+  color: var(--text-color);
+  background-color: transparent;
+  text-transform: lowercase;
+}
+
+.header__theme-menu-button:hover {
+  border: 1px solid rgba(50, 49, 45, 0.40);
+}
+
+.header__theme-menu-button:focus {
+  border-bottom: 1px solid var(--text-color);
+  outline: 1px;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--text-color);
+} 
+
+.header__title {
+  display: flex;
+  align-items: center;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 82.5%;
+}
+
+.title-decor {
+  display: block;
+  color: var(--text-color); 
+  font-size: 18px;
+  background-color: var(--bg-color-decor);
+  margin: 0px;
+}
+
+.questions__title {
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.title-decor-edit {
+  display: block;
+  color: var(--text-color); 
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #FF8DCB;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.questions__text {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.link {
+  color: var(--text-color);
+  text-decoration: none;
+  text-shadow: 2px 1px #FF8DCB;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:focus {
+  outline: 1px solid #353430;
+}
+
+.gallery {
+  display: grid;
+}
+
+.footer__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 82.5%;
+}
+
+@media (width <= 375px) {
+  .page {
+    margin: 10px;
+  }
+
+  .header__theme-menu-list {
+    display: grid;
+    margin-top: 75px;
+    justify-content: end;
+  }
+
+  .header__title  {
+    margin-top: 65px;
+    margin-bottom: 55px;
+    color: var(--font-color-title-light);
+    text-shadow: 2px 2px 0px #FF8DCB;
+    line-height: 82.5%;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
+
+  .header__text {
+    margin-bottom: 106px;
+  }
+
+  .subject {
+    margin-top: 106px;
+    margin-bottom: 50px;
+  }
+
+  .questions__title {
+    color: var(--text-color);
+    margin-top: 50px;
+    margin-bottom: 20px;
+  }
+
+  .gallery {
+    gap: 10px;
+  }
+
+  .sunset {
+    width: 355px;
+    height: 142px;
+    flex-shrink: 0;
+  }
+
+  .ice-cream {
+    width: 355px;
+    height: 355px;
+    flex-shrink: 0;
+  }
+
+  .tape {
+    width: 355px;
+    height: 237px;
+    flex-shrink: 0;
+  }
+
+  .books {
+    width: 354.999px;
+    height: 355px;
+    flex-shrink: 0;
+  }
+
+  .street {
+    width: 354.999px;
+    height: 237px;
+    flex-shrink: 0;
+  }
+
+  .footer__title {
+    margin: 286px 4px;
+    color: var(--font-color-title-light);;
+    text-shadow: 2px 2px 0px #FF8DCB;
+    line-height: 82.5%;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
 }
