@@ -13,12 +13,212 @@
   background-image: url(/images/cover-image-dark.png);
   
   .title-decor {
-    background-color: #FF0070;
+    background-color: var(--accent-color);
+  }
+
+  .header__decoration {
+    display: flex;
+    gap: 10px;
+    width: 52px;
+    height: 25px;
+    color: var(--accent-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: 8px;
+    margin-top: -25px;
+  }
+  
+  .header__decoration::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    align-self: center;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    filter: drop-shadow(0px 0px 4px var(--accent-color));
+  }
+
+  .header::before {
+    content: "";
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+  
+  .header::after {
+    content: "";
+    border-left: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+  .header__theme-menu-button {
+    color: var(--accent-color);
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(255, 0, 112, 0.40);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--accent-color);
+    outline: 1px;
+  }
+
+  .header__theme-menu-button_active {
+    border: 1px solid var(--accent-color);
+  }
+
+  .header__title {
+    color: var(--font-color-title-dark);
+    text-shadow: 4px 4px 0px var(--accent-color);
+  }
+
+  .questions__title {
+    color: var(--accent-color);
+  }
+
+  .questions__text {
+    color: #F1B2CE;
+  }
+
+  .link {
+    color: #F1B2CE;
+    text-shadow: 2px 1px var(--accent-color);
+  }
+
+  .link:focus-visible {
+    outline: 1px solid #F1B2CE;
+  }
+
+  .title-decor-edit {
+    background-color: var(--accent-color);
+  }
+
+  .footer::before {
+    content: "";
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+  
+  .footer::after {
+    content: "";
+    border-left: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+  .footer__title {
+    color: var(--font-color-title-dark);
+    text-shadow: 2px 2px 0px var(--accent-color);
   }
 }
 
 @media (prefers-color-scheme: dark) {
-  .page.theme_dark {
-    
+  .page {
+    color: var(--font-color-title-dark);
+    background-image: url(/images/cover-image-dark.png);
+  }
+
+  .title-decor {
+    background-color: var(--accent-color);
+  }
+
+  .header__decoration {
+    display: flex;
+    gap: 10px;
+    width: 52px;
+    height: 25px;
+    color: var(--accent-color);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-left: auto;
+    margin-right: 8px;
+    margin-top: -25px;
+  }
+
+  .header__decoration::after {
+    content: "";
+    display: flex;
+    align-self: center;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    filter: drop-shadow(0px 0px 4px var(--accent-color));
+  }
+
+  .header::before {
+    content: "";
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+  
+
+  .header::after {
+    content: "";
+    border-left: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+  .header__theme-menu-button {
+    color: var(--accent-color);
+  }
+
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(255, 0, 112, 0.40);
+  }
+
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--accent-color);
+    outline: 1px;
+  }
+
+  .header__theme-menu-button_active {
+    border: 1px solid var(--accent-color);
+  }
+
+  .header__title {
+    color: var(--font-color-title-dark);
+    text-shadow: 4px 4px 0px var(--accent-color);
+  }
+
+  .questions__title {
+    color: var(--accent-color);
+  }
+
+  .questions__text {
+    color: #F1B2CE;
+  }
+
+  .link {
+    color: #F1B2CE;
+    text-shadow: 2px 1px var(--accent-color);
+  }
+
+  .link:focus-visible {
+    outline: 1px solid #F1B2CE;
+  }
+
+  .title-decor-edit {
+    background-color: var(--accent-color);
+  }
+
+  .footer::before {
+    content: "";
+    border-top: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+  }
+  
+  .footer::after {
+    content: "";
+    border-left: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+  }
+
+  .footer__title {
+    color: var(--font-color-title-dark);
+    text-shadow: 2px 2px 0px var(--accent-color);
   }
 }
+

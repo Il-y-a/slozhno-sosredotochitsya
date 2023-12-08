@@ -10,20 +10,216 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   color: var(--font-color-title-light);
+  background-color: var(--bg-color);
+  background-image: url(../images/cover-image-light.png);
+
+  .visually-hidden-1 {
+    position: absolute; /* элемент вырывают из потока */
+    width: 1px; /* делают элемент очень маленьким, но таким, чтобы не пропал совсем */
+    height: 1px;
+    margin: -1px; /* элемент убирают из поля зрения, сдвинув на размер самого себя */
+    padding: 0; /* обнуляют отступы, они есть у некоторых элементов по умолчанию */
+    border: 0; /* убирают границу, она тоже может быть у каких-то элементов */
+    clip: rect(0 0 0 0); /* это свойство обрезает видимую область до нулевого значения */
+    overflow: hidden; /* на всякий случай скрывают видимое за пределами блока */
+  }
+  
+  .page {
+    /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+    color: var(--font-color-title-light);
+    background-color: var(--bg-color);
+    background-image: url(../images/cover-image-light.png);
+  }
+  
+  .header::before {
+    content: "";
+    border-top: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+  }
+  
+  .header::after {
+    content: "";
+    border-left: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+  }
+  
+  .header__theme-menu-button {
+    border: 1px solid rgba(50, 49, 45, 0.00);
+    color: var(--text-color);
+  }
+  
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(50, 49, 45, 0.40);
+  }
+  
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--text-color);
+  }
+  
+  .header__theme-menu-button_active {
+    border: 1px solid var(--text-color);
+  } 
+  
+  .header__title {
+    color: var(--font-color-title-light);
+    text-shadow: 4px 4px 0 #FF8DCB;
+  }
+  
+  .title-decor {
+    color: var(--text-color); 
+    background-color: var(--bg-color-decor);
+  }
+  
+  .questions__title {
+    color: var(--text-color);
+  }
+  
+  .title-decor-edit {
+    color: var(--text-color);
+    background-color: #FF8DCB;
+  }
+  
+  .questions__text {
+    color: var(--text-color);
+  }
+  
+  .link {
+    color: var(--text-color);
+    text-decoration: none;
+    text-shadow: 2px 1px #FF8DCB;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+
+  .link:focus-visible {
+    outline: 1px solid var(--text-color);
+  }
+  
+  .footer::before {
+    content: "";
+    border-top: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+  }
+  
+  .footer::after {
+    content: "";
+    border-left: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+  }
+  
+  .footer__title {
+    color: var(--font-color-title-light);
+    text-shadow: 2px 2px 0 #FF8DCB;
+  }
 }
 
 /* Остальные стили */
 
+
+
 @media (prefers-color-scheme: light) {
-:root {
+  :root {
       /* Дублируем переменные светлой темы */
     color: var(--font-color-title-light);    
   }
 
+  .theme_auto .visually-hidden-1 {
+    position: absolute; /* элемент вырывают из потока */
+    width: 1px; /* делают элемент очень маленьким, но таким, чтобы не пропал совсем */
+    height: 1px;
+    margin: -1px; /* элемент убирают из поля зрения, сдвинув на размер самого себя */
+    padding: 0; /* обнуляют отступы, они есть у некоторых элементов по умолчанию */
+    border: 0; /* убирают границу, она тоже может быть у каких-то элементов */
+    clip: rect(0 0 0 0); /* это свойство обрезает видимую область до нулевого значения */
+    overflow: hidden; /* на всякий случай скрывают видимое за пределами блока */
+  }
+
+  .page {
+    /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+    color: var(--font-color-title-light);
+    background-color: var(--bg-color);
+    background-image: url(../images/cover-image-light.png);
+  }
+  
+  .header::before {
+    content: "";
+    border-top: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+  }
+  
+  .header::after {
+    content: "";
+    border-left: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+  }
+  
+  .header__theme-menu-button {
+    border: 1px solid rgba(50, 49, 45, 0.00);
+    color: var(--text-color);
+  }
+  
+  .header__theme-menu-button:hover {
+    border: 1px solid rgba(50, 49, 45, 0.40);
+  }
+  
+  .header__theme-menu-button:focus-visible {
+    border-bottom: 1px solid var(--text-color);
+  }
+  
+  .header__theme-menu-button_active {
+    border: 1px solid var(--text-color);
+  } 
+  
+  .header__title {
+    color: var(--font-color-title-light);
+    text-shadow: 4px 4px 0 #FF8DCB;
+  }
+  
   .title-decor {
-    color: #353430; 
+    color: var(--text-color); 
+    background-color: var(--bg-color-decor);
+  }
+  
+  .questions__title {
+    color: var(--text-color);
+  }
+  
+  .title-decor-edit {
+    color: var(--text-color); 
     background-color: #FF8DCB;
   }
+  
+  .questions__text {
+    color: var(--text-color);
+  }
+  
+  .link {
+    color: var(--text-color);
+    text-decoration: none;
+    text-shadow: 2px 1px #FF8DCB;
+  }
+  
+  .link:focus {
+    outline: 1px solid var(--text-color);
+  }
+  
+  .footer::before {
+    content: "";
+    border-top: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+  }
+  
+  .footer::after {
+    content: "";
+    border-left: 1px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
+  }
+  
+  .footer__title {
+    color: var(--font-color-title-light);
+    text-shadow: 2px 2px 0 #FF8DCB;
+  }
 }
-
 /* Остальные стили */
