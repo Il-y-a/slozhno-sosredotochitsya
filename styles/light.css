@@ -66,7 +66,7 @@
   }
   
   .title-decor {
-    color: var(--text-color); 
+    color: var(--text-color);
     background-color: var(--bg-color-decor);
   }
   
@@ -120,9 +120,10 @@
 
 
 @media (prefers-color-scheme: light) {
+  
   :root {
       /* Дублируем переменные светлой темы */
-    color: var(--font-color-title-light);    
+    color: var(--font-color-title-light);
   }
 
   .theme_auto .visually-hidden-1 {
@@ -178,7 +179,7 @@
   }
   
   .title-decor {
-    color: var(--text-color); 
+    color: var(--text-color);
     background-color: var(--bg-color-decor);
   }
   
@@ -187,7 +188,7 @@
   }
   
   .title-decor-edit {
-    color: var(--text-color); 
+    color: var(--text-color);
     background-color: #FF8DCB;
   }
   

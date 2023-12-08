@@ -8,20 +8,16 @@
   --accent-color: #ff0070;
   --accent-font: 'IBM Plex Mono';
   --text-color: #353430;
+  --font-color-title-light: #FFC2E6;
+  --bg-color: #FFF1F7;
+  --bg-color-dark: #000028;
+  --font-color-title-dark: #DB00FF;
 }
 
 /* Файл light.css */
-:root {
-  --font-color-title-light: #FFC2E6;
-  --bg-color: #FFF1F7;
-}
 
 .title-decor {
   --bg-color-decor: #FF8DCB;
 }
 
 /* Файл dark.css */
-:root {
-  --bg-color-dark: #000028;
-  --font-color-title-dark: #DB00FF;
-}

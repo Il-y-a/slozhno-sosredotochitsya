@@ -67,7 +67,7 @@
 
 .title-decor {
   display: block;
-  color: var(--text-color); 
+  color: var(--text-color);
   font-size: 18px;
   line-height: 23.4px;
   background-color: var(--bg-color-decor);
@@ -83,7 +83,7 @@
 
 .title-decor-edit {
   display: block;
-  color: var(--text-color); 
+  color: var(--text-color);
   font-size: 18px;
   line-height: 23.4px;
   font-weight: 400;
@@ -183,17 +183,13 @@
 
   .questions:nth-of-type(odd) {
     display: flex;
+    margin-left: auto;
   }
 
   .questions__title:nth-of-type(odd) {
     display: flex;
     margin-right: 20px;
     min-width: 315px;
-  }
-
-  .questions:nth-of-type(odd) {
-    display: flex;
-    margin-left: auto;
   }
 
   .questions:nth-of-type(even) {
@@ -345,12 +341,6 @@
     min-width: 236px;
   }
 
-  .questions:nth-of-type(odd) {
-    display: flex;
-    margin-left: auto;
-    
-  }
-
   .title-decor:not(:first-child) {
     margin-top: 20px;
   }
@@ -358,6 +348,10 @@
   .questions__title-another {
     max-width: 236px;
     margin-bottom: 20px;
+  }
+
+  .questions__information__paragraph {
+    margin-top: 20px;
   }
 
   .questions__text {
@@ -446,6 +440,7 @@
 @media (width <= 375px) {
   .page {
     margin: 10px;
+    overflow-x: hidden;
   }
 
   .header__theme-menu-list {
@@ -531,7 +526,7 @@
 
   .footer__title {
     margin: 251px 4px;
-    color: var(--font-color-title-light);;
+    color: var(--font-color-title-light);
     text-shadow: 2px 2px 0px var(--bg-color-decor);
     line-height: 82.5%;
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
